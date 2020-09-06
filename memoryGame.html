@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memoryGame.css">
+    <title>Memory Game</title>
+    
+</head>
+<body>
+    <h1 class = "pageTitle">Match Game</h1>
+    <div class="overlayText visible ">
+        Click To Start
+    </div>
+    <div id ="gameOver" class="overlayText">
+        Game Over!
+        <span class = "overlayTextSmall">Click To Restart</span>
+    </div>
+    <div id ="victory" class="overlayText">
+        VICTORY!
+        <span class = "overlayTextSmall">Click To Restart</span>
+    </div>
+    <div class = "gameContainer">
+        <div class = "gameContainerInfo"> 
+            <div class = "gameInfo">
+                Time:<span id = "timeRemaining">100</span>
+            </div>
+
+            <div class = "gameInfo">
+            Flips:<span id = "Flips">0</span>
+            </div>
+        </div>
+     
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/AceHeart.jpeg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/AceHeart.jpeg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/AceSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/AceSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/JackofHearts.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/JackofHearts.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/jackSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/jackSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/KingHeart.png" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/KingHeart.png" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/kingSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/kingSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/queenHeart.png" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/queenHeart.png" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/queenSpade.jpg" alt="">
+            </div>
+        </div> 
+        <div class = "card">
+            <div class = "cardBack cardFace">
+                <img class = "cardBack" src="Assets/images/playingCardBack.png" alt="">
+            </div>
+            <div class = "cardFront cardFace">
+             <img class= "cardValue" src="Assets/images/queenSpade.jpg" alt="">
+            </div>
+        </div> 
+
+    </div>
+    <script src="memoryGame.js"></script>
+</body>
+</html>
